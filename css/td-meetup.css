@@ -1158,6 +1158,15 @@ p {
     -ms-flex-align: center;
     align-items: center;
   }
+  .col.speaker__col {
+    text-align: center;
+  }
+  .col.speech__col {
+    text-align: center;
+  }
+  .col.speech__col-sm {
+    text-align: center;
+  }
   .cta-form__btn {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1175,6 +1184,22 @@ p {
   }
   .cta-fotm__back-home {
     margin-top: 16px;
+  }
+  .speaker__photo-wrap {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .speaker__web {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .speech__tags {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
