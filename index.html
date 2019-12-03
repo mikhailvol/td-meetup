@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  Last Published: Fri Nov 29 2019 20:20:23 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Tue Dec 03 2019 08:03:13 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5ddff9f664e4a64416d54344" data-wf-site="5ddff9f664e4a60d9ad54343">
 <head>
   <meta charset="utf-8">
@@ -40,6 +40,9 @@ img {
   vertical-align: middle;
   display: inline-block;
 }
+p {
+  margin-top: 0;
+}
 /* Desktop button hover effect */
 @media (min-width: 992px) {
   .btn:before {
@@ -73,6 +76,33 @@ img {
   .btn.btn--ang:hover:before {
     width: 100%;
   }
+}
+/* Links in speker bio */
+.speaker__bio a {
+  color: #c2cee0;
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+.speaker__bio a:hover {
+  color: #a2b4cf;
+}
+/* Edge case - 2 or more talks */
+.talk + .talk {
+  margin-top: 200px;
+}
+/* Edge case - no speech info */
+.speaker + .speech {
+  margin-top: 72px;
+}
+@media (max-width: 767px) {
+  /* Edge case - no speech info */
+  .talk + .talk {
+    margin-top: 96px;
+  }
+  /* Edge case - no speech info */
+  .speaker + .speech {
+    margin-top: 16px;
+  } 
 }
 </style>
   </div>
@@ -121,7 +151,7 @@ img {
           <div class="hero__col">
             <a href="#speaker-two" class="card w-inline-block">
               <div class="card__photo card__photo--ph2"></div>
-              <h2 class="card__h">Ryan Chenkie</h2>
+              <h2 class="card__h">Kara Erickson</h2>
               <div class="card__occupation">Tech Lead of Angular&#x27;s framework team</div>
             </a>
           </div>
@@ -154,11 +184,90 @@ img {
       </div>
     </div>
   </div>
-  <div class="tmp-scroll">
+  <div class="section">
     <div class="container">
-      <div id="speaker-one" data-scroll="mid" class="tmp-sp1">Speaker one</div>
-      <div id="speaker-two" data-scroll="mid" class="tmp-sp1">Speaker two</div>
-      <div id="speaker-three" data-scroll="mid" class="tmp-sp1">Speaker three</div>
+      <section id="speaker-one" data-scroll="mid" class="talk">
+        <div class="speaker">
+          <div class="row">
+            <div class="col speaker__col">
+              <h1 class="speaker__h">Ryan Chenkie</h1>
+              <p class="speaker__occupation">Developer &amp; Trainer at Elevate</p>
+              <div class="speaker__web"><a href="#" class="speaker__link">@ryanchenkie</a>
+                <div class="dot-divider"></div><a href="#" class="speaker__link">ryanchenkie.com</a></div>
+              <p class="speaker__bio">Making software with JavaScript, Angular, React, Node, and GraphQL</p>
+            </div>
+            <div class="col speaker__col-sm">
+              <div class="speaker__photo-wrap">
+                <div class="speaker__photo speaker__photo--ph1"></div>
+                <div class="speaker__photo-shape"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="speech">
+          <div class="row">
+            <div class="col speech__col-sm">
+              <div class="speech__label">Speech</div>
+              <h2>Taming Forms in Angular</h2>
+            </div>
+            <div class="col speech__col">
+              <p>Just like AngularJS was pushing the boundaries of web development at it&#x27;s time of creation, Angular is pushing hard again. We believe in its success and think investing time to learn it now, will be time very well spent.</p>
+              <div class="speech__tags">
+                <div class="tag">Angular</div>
+                <div class="dot-divider"></div>
+                <div class="tag">Angular’s developer tooling</div>
+                <div class="dot-divider"></div>
+                <div class="tag">Angular’s services</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="speaker-two" data-scroll="mid" class="talk">
+        <div class="speaker">
+          <div class="row">
+            <div class="col speaker__col">
+              <h1 class="speaker__h">Kara Erickson</h1>
+              <p class="speaker__occupation">Tech Lead of Angular&#x27;s framework team</p>
+              <div class="speaker__web"><a href="#" target="_blank" class="speaker__link">@ryanchenkie</a>
+                <div class="dot-divider"></div><a href="#" target="_blank" class="speaker__link">ryanchenkie.com</a></div>
+              <p class="speaker__bio">TL on Angular framework @ Google. Opinions are my own</p>
+            </div>
+            <div class="col speaker__col-sm">
+              <div class="speaker__photo-wrap">
+                <div class="speaker__photo speaker__photo--ph2"></div>
+                <div class="speaker__photo-shape"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="speaker-three" data-scroll="mid" class="talk">
+        <div class="speaker">
+          <div class="row">
+            <div class="col speaker__col">
+              <h1 class="speaker__h">Brandon Roberts</h1>
+              <p class="speaker__occupation">Tech Lead of Angular&#x27;s framework team</p>
+              <div class="speaker__web"><a href="#" target="_blank" class="speaker__link">@brandon</a></div>
+              <p class="speaker__bio">Web dev, tech writer, Senior Angular Engineer at <a href="https://twitter.com/nrwl_io">@nrwl_io</a>, NgRx maintainer, GDE, sports fan, recovering gadget addict, and still learning. Gif game </p>
+            </div>
+            <div class="col speaker__col-sm">
+              <div class="speaker__photo-wrap">
+                <div class="speaker__photo speaker__photo--ph3"></div>
+                <div class="speaker__photo-shape"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="speech">
+          <div class="row">
+            <div class="col speech__col-sm">
+              <div class="speech__label">Speech</div>
+              <h2>The State of Angular in 2019</h2>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div style="display:none;-webkit-transform:translate3d(-1000PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-1000PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-1000PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-1000PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="modal">

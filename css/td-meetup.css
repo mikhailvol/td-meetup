@@ -418,15 +418,15 @@ p {
 }
 
 .card__photo.card__photo--ph1 {
-  background-image: url('../images/ava_1.jpg');
+  background-image: url('../images/ryan.jpg');
 }
 
 .card__photo.card__photo--ph2 {
-  background-image: url('../images/ava_2.jpg');
+  background-image: url('../images/kara.jpg');
 }
 
 .card__photo.card__photo--ph3 {
-  background-image: url('../images/brandon_roberts.jpg');
+  background-image: url('../images/brandon.jpeg');
 }
 
 .card__h {
@@ -484,11 +484,11 @@ p {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1128px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 34px;
-  padding-left: 34px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 .row {
@@ -514,6 +514,29 @@ p {
   align-self: center;
 }
 
+.col.speaker__col {
+  width: 65%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.col.speaker__col-sm {
+  width: 35%;
+}
+
+.col.speech__col {
+  width: 65%;
+}
+
+.col.speech__col-sm {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 .intro__desc {
   margin-top: 24px;
   font-size: 18px;
@@ -525,33 +548,10 @@ p {
   max-width: 433px;
 }
 
-.tmp-scroll {
+.section {
   width: 100%;
-  height: 2400px;
   padding-top: 200px;
-}
-
-.tmp-sp1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 500px;
-  margin-bottom: 200px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-style: dashed;
-  border-width: 2px;
-  border-color: #626d8e;
-  font-size: 26px;
-  text-align: center;
+  padding-bottom: 200px;
 }
 
 .modal {
@@ -718,6 +718,145 @@ p {
   display: none;
 }
 
+.talk {
+  width: 100%;
+  max-width: 890px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.speaker__photo-wrap {
+  position: relative;
+  width: 100%;
+  height: 256px;
+  max-width: 256px;
+  margin-right: 24px;
+  margin-left: auto;
+}
+
+.speaker__photo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/example-bg.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.speaker__photo.speaker__photo--ph1 {
+  background-image: url('../images/ryan.jpg');
+}
+
+.speaker__photo.speaker__photo--ph2 {
+  background-image: url('../images/kara.jpg');
+}
+
+.speaker__photo.speaker__photo--ph3 {
+  background-image: url('../images/brandon.jpeg');
+}
+
+.speaker__photo-shape {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  right: -24px;
+  bottom: -24px;
+  border-style: solid;
+  border-width: 8px;
+  border-color: #dd244a;
+}
+
+.speaker__web {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.dot-divider {
+  width: 4px;
+  height: 4px;
+  margin-right: 8px;
+  margin-left: 8px;
+  border-radius: 50%;
+  background-color: #3a4669;
+}
+
+.speaker__link {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+  color: #626d8e;
+  font-size: 13px;
+  line-height: 1.22em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+
+.speaker__link:hover {
+  color: #a2b4cf;
+}
+
+.speaker__occupation {
+  margin-top: 12px;
+  color: #a2b4cf;
+  font-size: 13px;
+  line-height: 1.22em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.speaker__bio {
+  margin-top: 28px;
+}
+
+.speech__tags {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 24px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tag {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: #dd244a;
+  font-size: 14px;
+  line-height: 1.22em;
+  font-weight: 600;
+}
+
+.test {
+  height: 200px;
+}
+
+.speech__label {
+  margin-bottom: 4px;
+  color: #3a4669;
+  font-size: 12px;
+  line-height: 1.4em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 @media (max-width: 991px) {
   .btn {
     border-radius: 100px;
@@ -781,6 +920,10 @@ p {
   .cta-fotm__back-home {
     display: block;
   }
+  .speaker__photo-wrap {
+    height: 220px;
+    max-width: 220px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -788,7 +931,7 @@ p {
     font-size: 32px;
   }
   h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
   h3 {
     font-size: 20px;
@@ -889,6 +1032,22 @@ p {
     width: 100%;
     text-align: center;
   }
+  .col.speaker__col {
+    width: 100%;
+  }
+  .col.speaker__col-sm {
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+  .col.speech__col {
+    width: 100%;
+  }
+  .col.speech__col-sm {
+    width: 100%;
+  }
   .intro__desc {
     margin-top: 16px;
     font-size: 16px;
@@ -897,11 +1056,9 @@ p {
     margin-right: auto;
     margin-left: auto;
   }
-  .tmp-scroll {
-    padding-top: 64px;
-  }
-  .tmp-sp1 {
-    margin-bottom: 64px;
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .topbar__soc {
     display: none;
@@ -953,6 +1110,31 @@ p {
     height: 18px;
     margin-top: auto;
     margin-bottom: auto;
+  }
+  .speaker__photo-wrap {
+    height: 160px;
+    max-width: 160px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .speaker__photo-shape {
+    left: 12px;
+    top: -12px;
+    right: -12px;
+    bottom: 12px;
+    border-width: 4px;
+  }
+  .speaker__web {
+    margin-top: 12px;
+  }
+  .speaker__occupation {
+    margin-top: 8px;
+  }
+  .speaker__bio {
+    margin-top: 20px;
+  }
+  .speech__tags {
+    margin-top: 16px;
   }
 }
 
