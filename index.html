@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  Last Published: Tue Dec 03 2019 13:49:29 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Wed Dec 04 2019 11:43:38 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5ddff9f664e4a64416d54344" data-wf-site="5ddff9f664e4a60d9ad54343">
 <head>
   <meta charset="utf-8">
@@ -104,6 +104,10 @@ p {
     margin-top: 16px;
   } 
 }
+/* Edge case - no speech info */
+.future-card + .future-card {
+  margin-top: 24px;
+}
 </style>
   </div>
   <div class="hero">
@@ -132,7 +136,7 @@ p {
       <div class="hero__container">
         <div class="hero__content">
           <div class="venue">
-            <div class="venue__date">NOVEMBER 21, 14:00 (EST)</div>
+            <div class="venue__date">November 21, 14:00 (EST)</div>
             <div class="venue__place">Online</div>
           </div>
           <h1 class="hero__h"><span class="hero__h-color">Angular</span> Meetup</h1>
@@ -270,6 +274,136 @@ p {
       </div>
     </div>
   </div>
+  <div class="section future">
+    <div class="container">
+      <div class="row">
+        <div class="col future__col">
+          <div class="future-card">
+            <div class="future-card__venue">
+              <div class="future-card__date">November 21, 14:00 (EST)</div>
+              <div class="place">
+                <div class="place__dot"></div>
+                <div>Online</div>
+              </div>
+            </div>
+            <div class="row future-card__row">
+              <div class="col future-card__col">
+                <div class="speaker-sm">
+                  <div class="speaker-sm__photo speaker-sm__photo--ph1"></div>
+                  <div class="speaker-sm__content">
+                    <h2 class="speaker-sm__name">Daniel Poda</h2>
+                    <div class="speaker-sm__occupation">Software developer </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="future-card__btn">
+              <a data-w-id="061e4f0d-ed08-908f-6769-0d05f59dc609" href="#" class="btn w-inline-block">
+                <div class="btn__text">Attend Now</div><img src="images/cta_arrow_ic.svg" alt="" class="btn__ic"></a>
+            </div>
+            <div class="future-card__shape"></div>
+          </div>
+          <div class="future-card">
+            <div class="future-card__venue">
+              <div class="future-card__date">November 21, 14:00 (EST)</div>
+              <div class="place">
+                <div class="place__dot"></div>
+                <div>Online</div>
+              </div>
+            </div>
+            <div class="row future-card__row">
+              <div class="col future-card__col">
+                <div class="speaker-sm">
+                  <div class="speaker-sm__photo speaker-sm__photo--ph1"></div>
+                  <div class="speaker-sm__content">
+                    <h2 class="speaker-sm__name">Daniel Poda</h2>
+                    <div class="speaker-sm__occupation">Software developer </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col future-card__col">
+                <div class="speaker-sm">
+                  <div class="speaker-sm__photo speaker-sm__photo--ph1"></div>
+                  <div class="speaker-sm__content">
+                    <h2 class="speaker-sm__name">Daniel Poda</h2>
+                    <div class="speaker-sm__occupation">Software developer </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="future-card__btn">
+              <a data-w-id="ee828153-e1e3-0928-a9fd-f39df1a57905" href="#" class="btn w-inline-block">
+                <div class="btn__text">Attend Now</div><img src="images/cta_arrow_ic.svg" alt="" class="btn__ic"></a>
+            </div>
+            <div class="future-card__shape"></div>
+          </div>
+        </div>
+        <div class="col future__col-desc">
+          <div class="future__wrap">
+            <h1 class="section-h">Other Upcoming Angular meetups</h1>
+            <p class="future__desc">Looking for another date? See more upcoming Angular meetups with our experts!</p>
+          </div><img src="images/h_dots_img.svg" alt="" class="future__img"></div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="sec-header">
+        <h1>See how it was</h1>
+        <p class="sec-header__desc">Check out Past Angular meetups!</p>
+      </div>
+      <div class="row">
+        <div class="col past__col">
+          <a href="#" class="past-card w-inline-block">
+            <div>
+              <div class="past-card__date">November 2019</div>
+              <h2 class="past-card__h">Agile development and Angular</h2>
+              <div class="past-card__tags">
+                <div class="tag tag--sm">GraphQl</div>
+                <div class="dot-divider"></div>
+                <div class="tag tag--sm">Authorisation</div>
+                <div class="dot-divider"></div>
+                <div class="tag tag--sm">Security</div>
+              </div>
+            </div>
+            <div class="past-card__speaker">
+              <div class="speaker-xs">
+                <div class="speaker-xs__photo speaker-xs__photo--ph1"></div>
+                <div class="speaker-sm__content">
+                  <h2 class="speaker-sm__name">Daniel Poda</h2>
+                  <div class="speaker-sm__nameoccupation">Software developer</div>
+                </div>
+              </div>
+            </div>
+            <div class="past-card__shape"></div><img src="images/v_dots_ang.svg" alt="" class="past-card__img"><img src="images/external_ic.svg" alt="" class="past-card__ic"></a>
+        </div>
+        <div class="col past__col">
+          <a href="#" class="past-card w-inline-block">
+            <div>
+              <div class="past-card__date">October 2019</div>
+              <h2 class="past-card__h">State of Angular Frameworks &amp; Libraries in the future</h2>
+              <div class="past-card__tags">
+                <div class="tag tag--sm">GraphQl</div>
+                <div class="dot-divider"></div>
+                <div class="tag tag--sm">Authorisation</div>
+                <div class="dot-divider"></div>
+                <div class="tag tag--sm">Angular’s services</div>
+              </div>
+            </div>
+            <div class="past-card__speaker">
+              <div class="speaker-xs">
+                <div class="speaker-xs__photo speaker-xs__photo--ph1"></div>
+                <div class="speaker-sm__content">
+                  <h2 class="speaker-sm__name">Daniel Poda</h2>
+                  <div class="speaker-sm__nameoccupation">Software developer </div>
+                </div>
+              </div>
+            </div>
+            <div class="past-card__shape"></div><img src="images/v_dots_ang.svg" alt="" class="past-card__img"><img src="images/external_ic.svg" alt="" class="past-card__ic"></a>
+        </div>
+      </div>
+    </div>
+  </div>
   <div style="display:none;-webkit-transform:translate3d(-1000PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-1000PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-1000PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-1000PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="modal">
     <div class="modal__content">
       <div class="cta-form w-form">
@@ -302,6 +436,67 @@ p {
       </div>
     </div>
     <div class="modal__bg"></div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="subscribe subscribe--ang w-form">
+        <div class="subscribe__content">
+          <h1>Subscribe</h1>
+          <p class="subscribe__desc">never miss a meetup again!</p>
+        </div>
+        <form id="email-form" name="email-form" data-name="Email Form" class="subscribe__form"><input type="email" class="subscribe__input w-input" maxlength="256" name="Email" data-name="Email" placeholder="Enter your email" id="Email-3" required=""><input type="submit" value=" " class="subscribe__btn w-button"></form>
+        <div class="subscribe__success w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sponsors">
+    <div class="container">
+      <div class="row">
+        <div class="col sponsors__col-desc">
+          <h3>Big thanks who helped with this meetup</h3>
+        </div>
+        <div class="col sponsors__col">
+          <div class="row sponsors__row-logo">
+            <div class="col sponsors__col-logo">
+              <div class="sponsor"><img src="images/logo03.png" object-fit="contain" alt="" class="sponsor__img"></div>
+            </div>
+            <div class="col sponsors__col-logo">
+              <div class="sponsor"><img src="images/logo02.png" object-fit="contain" alt="" class="sponsor__img"></div>
+            </div>
+            <div class="col sponsors__col-logo">
+              <div class="sponsor"><img src="images/logo01.png" object-fit="contain" alt="" class="sponsor__img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col footer__main-col">
+          <div><img src="images/footer_logo.svg" alt="">
+            <div class="footer__soc">
+              <div class="soc"><a href="https://twitter.com/thisdotmedia" target="_blank" class="soc__item w-inline-block"><img src="images/tw_ic.svg" alt=""></a><a href="https://www.facebook.com/thisdot" target="_blank" class="soc__item w-inline-block"><img src="images/facebook_ic.svg" alt=""></a><a href="https://www.youtube.com/thisdotmedia" target="_blank" class="soc__item w-inline-block"><img src="images/youtube_ic.svg" alt=""></a><a href="https://medium.com/@thisdotmedia" target="_blank" class="soc__item w-inline-block"><img src="images/medium_ic.svg" alt=""></a><a href="https://dev.to/thisdotmedia_staff" target="_blank" class="soc__item w-inline-block"><img src="images/dev_ic.svg" alt=""></a></div>
+            </div>
+          </div>
+          <div class="footer__copyright">© 2019 This Dot, Inc. All Rights Reserved</div>
+        </div>
+        <div class="col footer__col">
+          <div class="footer__title">Meetup</div>
+          <div class="footer__links"><a href="#" class="footer__link-item">CFP</a><a href="#" class="footer__link-item">Privacy</a><a href="#" class="footer__link-item">Speakers</a><a href="#" class="footer__link-item">Archive</a></div>
+        </div>
+        <div class="col footer__col">
+          <div class="footer__title">This Dot</div>
+          <div class="footer__links"><a href="#" class="footer__link-item">Labs</a><a href="#" class="footer__link-item">Vue Meetup</a><a href="#" class="footer__link-item">React Meetup</a><a href="#" class="footer__link-item">Angular Meetup</a></div>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/td-meetup.js" type="text/javascript"></script>
